@@ -1,0 +1,113 @@
+mat-toolbar {
+  background: #39005c !important;
+  color: white !important;
+}
+
+input[type="text"],
+select,
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 7px;
+  margin: 7px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cont {
+  /* height: calc(98 vh - 65px); */
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: lightgray;
+}
+
+.mat-drawer-inner-container {
+  width: 130px !important;
+}
+
+.mat-drawer-content {
+  height: calc(87vh) !important;
+  background-color: white;
+}
+
+h1 {
+  color: black;
+  padding: 10px;
+  font-weight: 500 !important;
+  text-align: center;
+}
+
+.content {
+  /* height: calc(98vh - 98px); */
+  /* height: 100px; */
+  border-radius: 10px;
+  margin: 16px;
+  /* background-color: ghostwhite; */
+
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  /* border: 2px solid purple; */
+}
+
+hr {
+  margin-top: -18px;
+}
+
+.btn-add {
+  border: none;
+  background-color: #0b810f;
+  padding: 10px 13px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+}
+
+.btn-back {
+  border: none;
+  background-color: grey;
+  padding: 10px 13px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+}
+
+label {
+  color: black;
+  font-size: 12px;
+}
+
+.btn {
+  border: none;
+  background-color: #39005c;
+  padding: 10px 13px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.form{
+  padding: 0px 40px 50px 40px;
+}

@@ -1,0 +1,51 @@
+<div class="content">
+    <h1>Daftar Permohonan Perolehan</h1>
+    <hr><br/>
+
+    <div class="form">
+        <div style="columns: 2;">
+            <label> Tajuk : </label>
+            <input type="text" [(ngModel)]="permohonan.Tajuk" />
+            <label> Ketua Projek : </label>
+            <input type="text" [(ngModel)]="permohonan.KetuaProjek" />
+        </div>
+
+        <div style="columns: 2;">
+            <label> Nilai : </label>
+            <input type="text" [(ngModel)]="permohonan.Nilai" />
+            <label> Tarikh hantar permohonan : </label>
+            <input type="date" [ngModel]="datePipe.transform(permohonan.TarikhPermohonan, 'yyyy-MM-dd')" />
+        </div>
+
+        <div style="columns: 2;">
+            <label> Vot : </label>
+            <select [(ngModel)]="permohonan.NamaVot">
+                <option>Please choose</option>
+            </select>
+            <label> Nilai Vot : </label>
+            <input type="text" disabled [(ngModel)]="permohonan.NilaiVot" />
+        </div>
+
+        <div style="columns: 2;">
+            <label> Jenis Perolehan : </label>
+            <select [(ngModel)]="permohonan.JenisPerolehan">
+                <option value="0" disabled>Please choose</option>
+                <option>Perkhidmatan</option>
+                <option>Pendidikan</option>
+                <option>Bekalan</option>
+                <option>Kerja</option>
+            </select>
+            <label> Tarikh mula projek : </label>
+            <input type="date" [(ngModel)]="permohonan.TarikhMulaProjek" />
+        </div>
+        <br/>
+        
+        <div style="float: right;">
+            <button class="btn-add" (click)="simpan()">Simpan <i class="fa fa-plus"></i> </button>
+        </div>
+
+        <div style="float: left;">
+            <button class="btn-back" (click)="back()"> <i class="fa fa-arrow-left"></i> Sebelum</button>
+        </div>
+    </div>
+</div>

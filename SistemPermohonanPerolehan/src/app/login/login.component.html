@@ -1,0 +1,22 @@
+<div class="cont">
+    <div class="container">
+      <div class="form-container">
+        <h1>Login</h1>
+        <input name="username"  type="text" placeholder="Username" required [(ngModel)]="user.Username"/>
+        <input name="password"   type="password" placeholder="Password" required [(ngModel)]="user.Password"/>
+        <button (click)="login()">LOGIN</button>
+  
+        <div style="margin-left: 250px;">
+          <button style="padding:10px" routerLink="/register">R</button>
+        </div>
+  
+      </div>
+  
+      <div class="overlay-container">
+        <div class="overlay-panel">
+          <h2 style="color: white">Welcome to Sistem Permohonan Perolehan </h2>
+          <span class="span"><img  width="50%"  style="padding: 10px" src="assets/Images/LGM-logo.png"/></span>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,30 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+      <span class="span"><img width="55px" style="padding: 5px; margin-top: 10px;" src="assets/Images/LGM-logo.png"/></span> &nbsp;
+      <span>Sistem Permohonan Perolehan</span>
+      <span class="flexExpand"></span>
+      <div >
+        <button class="btn-logout" (click)="logOut()">LOGOUT</button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-drawer-container>
+    <mat-drawer #drawer opened="true" mode="side" style="background-color: #39005c;">
+      <button routerLink="/e-perolehan/permohonan-perolehan"  routerLinkActive="active"> Permohonan Perolehan </button><br/>
+      <button>a</button><br/>
+      <button>a</button><br/>
+      <button>a</button><br/>
+      <button routerLink="/e-perolehan/utilities" routerLinkActive="active" >Utilities</button><br/>
+
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+        
+    </mat-drawer-content>
+</mat-drawer-container> 
+
+
+
+
